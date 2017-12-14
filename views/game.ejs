@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" type="text/css" href="stylesheets/login.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+	  <!-- Compiled and minified JavaScript -->
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script>
+		if(<%=category%>!=1){
+	  var quiz_category = <%= category %>
+		}else{
+			var quiz_category = "any";
+		}
+  </script>
+	<script src="/javascripts/in_game.js"></script>
+	<body>
+
+    <div class="quiz_box" style="width:100%;">
+        <div class="container">
+           <div class="row">
+						 <div class="card blue-grey darken-1">
+						 	<div class="card-content white-text">
+								 	<div id="question">
+								 </div>
+								 <div class="card-action">
+									 <div id="options" class="ButtonGroupWrapper" align="left">
+		 							</div>
+            </div>
+
+            </div>
+						</div>
+							<div class="col s12 m12" align="right">
+								<button class="btn waves-effect waves-light" onclick="send_question()" align="right">Get Question</button>
+              </div>
+           </div>
+        </div>
+    </div>
+
+
+
+
+
+
+	</body>
+</html>

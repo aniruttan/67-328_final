@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="/javascripts/home.js"></script>
+		<link rel="stylesheet" type="text/css" href="stylesheets/login.css">
+		<!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+	<title>Home Page</title>
+	</head>
+	<body>
+
+      <div class="quiz_box">
+        <div class="container">
+           <div class="row">
+              <div class="col s12 m6 offset-m3">
+								<p>Welcome <em id="member"> </p>
+								<div>
+									<h4> Select a  category to begin your game!</h4>
+									<form action="/start_game" method="post">
+									Quiz Category: <select id = "category" name="trivia_category" class="form-control">
+								<option value="1">Any Category</option>
+								<option value="9">General Knowledge</option>
+								<option value="10">Entertainment: Books</option>
+								<option value="11">Entertainment: Film</option>
+								<option value="12">Entertainment: Music</option>
+								<option value="13">Entertainment: Musicals &amp; Theatres</option>
+								<option value="14">Entertainment: Television</option>
+								<option value="15">Entertainment: Video Games</option>
+								<option value="16">Entertainment: Board Games</option>
+								<option value="17">Science &amp; Nature</option>
+
+								</select>
+								<input class="btn waves-effect waves-light" type="submit" value="Start Game!"/>
+								</form>
+							</div>
+              </div>
+           </div>
+        </div>
+    </div>
+	</body>
+</html>

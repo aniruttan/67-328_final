@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-  	"start":"node app",
+    "start": "node app",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -12,8 +12,17 @@
   "dependencies": {
     "ejs": "^2.5.7",
     "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "express-sessions": "^1.0.6",
+    "fs": "0.0.1-security",
+    "mongodb": "^2.2.33",
     "morgan": "^1.9.0",
+    "node-materialize": "^1.1.1",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7",
     "request": "^2.83.0",
-    "socket.io": "^2.0.4"
+    "socket.io": "^2.0.4",
+    "sockets": "^0.4.2"
   }
 }
